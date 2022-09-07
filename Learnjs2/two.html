@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .fon{
+            background: rgb(38, 38, 38);
+            width: 100%;
+            height: 100vh;
+        }
+        .range{
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .icon{
+            display: flex;
+            
+        }
+        .mus{
+            margin-left: 5px;
+            font-size: 30px;
+            margin-top: 13px;
+            color: rgb(228, 224, 224);
+            text-shadow: 1px 1px 2px rgb(157, 157, 157), 0 0 1em rgb(159, 144, 144); 
+        }
+        .container{
+            margin: auto;
+            max-width: 1000px;
+        }
+        .nav{
+            
+            margin-top: 10px;
+            padding-top: 10px;
+            margin-left: 20px;
+            
+            
+            
+        }
+        .nav a{
+            text-decoration: none;
+            color:rgb(254 113 23) ;
+
+            font-size: 20px;
+            margin-right: 5px;
+            text-shadow: 1px 1px 2px rgba(250, 154, 75, 0.5), 0 0 1em rgba(250, 154, 75, 0.5); 
+            
+            
+            
+            
+
+        }
+        .Serv{
+            display: flex;
+            
+            justify-content: space-around;
+            margin-top: 10px;
+            padding: 10px 30px;
+            border-radius: 10px;
+            
+        }
+        .log a{
+            text-decoration: none;
+            color:rgb(254 113 23);
+            font-size: 20px;
+            margin-right: 5px;
+            background:rgb(255, 255, 255) ;
+            padding: 5px 20px;
+            border-radius: 30px;
+            border-bottom-right-radius:50px ;
+            box-shadow: 0 0 10px rgba(250, 154, 75, 0.5); 
+
+        }
+        .reg a{
+            text-decoration: none;
+            font-size: 20px;
+            color:rgb(254 113 23);
+            background:rgb(255, 255, 255) ;
+            background:rgb(255, 255, 255) ;
+            padding: 5px 20px;
+            border-radius: 30px;
+            border-top-left-radius:50px ;
+            box-shadow: 0 0 10px rgba(250, 154, 75, 0.5); 
+
+            
+
+        }
+        .innerHeader{
+            display: flex;
+            color:rgb(254 113 23);
+            justify-content: space-between;
+
+        }
+        .artic{
+            display: flex;
+        }
+        .realContent{
+            
+            width: 500px;
+        }
+        .content{
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        .gen{
+            font-size: 40px;
+            margin-top: 45px;
+            margin-left: 30px;
+            padding-right: 40px;
+            padding: 10px 30px;
+            background: rgb(254 113 23);
+            width: 465px;
+            border: none;
+            color: aliceblue;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(250, 154, 75, 0.5); 
+        }
+        .cita{
+            width: 350px;
+            height: 300px;
+            background: rgb(38, 38, 38);;
+            margin-left: 70px;
+            border-radius: 5px;
+            margin-top: 30px;
+            
+            font-size: 33.5px;
+            padding: 20px;
+            color: rgb(211, 98, 28);
+            text-shadow: 1px 1px 2px rgb(157, 157, 157), 0 0 1em rgb(159, 144, 144); /* Параметры тени */
+            
+            opacity: .5;
+        }
+        .paper::after{
+            background:rgb(254 113 23);
+            width: 100px;
+            height: 66666px;
+        }
+        .paper{
+            width: 550px;
+            height: 350px;
+            margin-top: -200px;
+            margin-left: -10px;
+            opacity: .5;
+        }
+        
+        
+        @media(max-width:960px){
+            .artic{
+                position: relative;
+                top:500px
+                
+            }
+            .content{
+                position: relative;
+                bottom: 500px;
+                right: 500px;
+            }
+            .paper{
+                position: relative;
+                top: 220px;
+                height: 150px;
+                
+
+            }
+            .cita{
+                height: 100px;
+            }
+        }
+        @media(max-width:630px){
+            .nav a{
+                font-size: 14px;
+            }
+            .Serv{
+                display: block;
+                
+            }
+            .log{
+                margin-bottom: 10px;
+            }
+            .reg a{
+                font-size: 14px;
+            }
+            .log a{
+                font-size: 14px;
+            }
+            .gen{
+                width: 300px;
+                font-size: 14px;
+            }
+            .paper{
+                width: 300px;
+                padding-left: 80px;
+                padding-top: 50px;
+            }
+            
+            .imgToy{
+                width: 300px;
+                height: 400px;
+                margin-left: 170px;
+            }
+            .cita{
+                font-size: 14px;
+                width: 200px;
+            }
+            .realContent{
+                margin-left: 100px;
+            }
+        }
+        @media(max-width:515px){
+            .imgToy{
+                
+                margin-left: 130px;
+            }
+            .realContent{
+                margin-left: 70px;
+            }
+            .paper{
+                
+                padding-left: 50px;
+                
+            }
+
+
+        }
+        @media(max-width:430px){
+            .imgToy{
+                
+                margin-left: 120px;
+            }
+            .realContent{
+                margin-left: 40px;
+                margin-top: -80px;
+            }
+            .paper{
+                position: relative;
+                top: 180px;
+                padding-left: 35px;
+                
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="fon">
+        <div class="container">
+            <div class="OutHeader">
+                <div class="innerHeader">
+                    <div class="icon">
+                        <img class="range" src="range.jpg" alt="">
+                        <div class="mus">SulMuzz</div>
+
+
+                    </div>
+                    <div class="nav">
+                        <a href="#">Home</a>
+                        <a href="#">Information</a>
+                        <a href="#">About</a>
+                        <a href="#">Musicants</a>
+                        <a href="#">Chords</a>
+                        
+
+
+                    </div>
+                    <div class="Serv">
+                        <div class="log">
+                            <a href="#">Login</a>
+                        </div>
+                        <div class="reg">
+                            
+                            <a href="#">Register</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="artic">
+                <div class="realContent">
+                    <button class="gen">Цитаты Виктора Цоя</button>
+                    <div class="cita"></div>
+                    
+
+                </div>
+                <div class="content">
+                    <img src="thsoy.png" class="imgToy" alt="" width="400px" height="500px">
+                </div>
+            </div>
+            <div class="paper">
+                <img class="paper" src="paper.png" alt="">
+            </div>
+        </div>        
+    </header>
+
+
+
+
+
+
+    <script src="two.js"></script>
+
+    
+</body>
+</html>
